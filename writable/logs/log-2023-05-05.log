@@ -1,0 +1,511 @@
+CRITICAL - 2023-05-05 06:45:31 --> Undefined property: App\Controllers\SkillController::$User
+in APPPATH\Controllers\SkillController.php on line 17.
+ 1 APPPATH\Controllers\SkillController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SkillController::$User', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\SkillController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SkillController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SkillController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 06:56:07 --> Undefined property: App\Controllers\SkillController::$load
+in APPPATH\Controllers\SkillController.php on line 12.
+ 1 APPPATH\Controllers\SkillController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SkillController::$load', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\SkillController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\SkillController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 07:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 07:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 07:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 07:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 07:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 07:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 08:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 08:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 08:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 08:32:36 --> Call to undefined function form_dropdown()
+in APPPATH\Views\create_skill.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('create_skill', [], true)
+ 4 APPPATH\Controllers\SkillController.php(28): view('create_skill', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SkillController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SkillController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 08:36:05 --> syntax error, unexpected variable "$user_options"
+in APPPATH\Controllers\SkillController.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\SkillController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SkillController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SkillController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\SkillController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 08:36:26 --> Undefined property: App\Controllers\SkillController::$load
+in APPPATH\Controllers\SkillController.php on line 21.
+ 1 APPPATH\Controllers\SkillController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SkillController::$load', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\SkillController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SkillController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SkillController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 08:41:35 --> Undefined variable $options
+in APPPATH\Views\create_skill.php on line 38.
+ 1 APPPATH\Views\create_skill.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $options', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\create_skill.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\create_skill.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('create_skill', [], true)
+ 5 APPPATH\Controllers\SkillController.php(29): view('create_skill', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SkillController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SkillController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 08:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 08:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 08:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 10:35:12 --> Object of class App\Models\User could not be converted to string
+in APPPATH\Controllers\SkillController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SkillController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SkillController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 10:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 10:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 11:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 11:41:48 --> Call to undefined function set_value()
+in APPPATH\Views\create_cat.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('create_cat', [], true)
+ 4 APPPATH\Controllers\CatController.php(15): view('create_cat')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:33:48 --> Allowed fields must be specified for model: "App\Models\CatModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\CatModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 12:39:23 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 12:39:23 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 12:39:23\', \'2023-05-05 12:39:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 12:39:23\', \'2023-05-05 12:39:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 12:39:23\', \'2023-05-05 12:39:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:01:03 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:01:03 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:01:03\', \'2023-05-05 13:01:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:01:03\', \'2023-05-05 13:01:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:01:03\', \'2023-05-05 13:01:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:02:28 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:02:28 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:02:28\', \'2023-05-05 13:02:28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:02:28\', \'2023-05-05 13:02:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:02:28\', \'2023-05-05 13:02:28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:06:21 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:06:21 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:06:21\', \'2023-05-05 13:06:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:06:21\', \'2023-05-05 13:06:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:06:21\', \'2023-05-05 13:06:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:08:45 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:08:45 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:08:45\', \'2023-05-05 13:08:45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:08:45\', \'2023-05-05 13:08:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:08:45\', \'2023-05-05 13:08:45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:13:16 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:13:16 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:13:16\', \'2023-05-05 13:13:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:13:16\', \'2023-05-05 13:13:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:13:16\', \'2023-05-05 13:13:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:15:48 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:15:48 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:15:48\', \'2023-05-05 13:15:48\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:15:48\', \'2023-05-05 13:15:48\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:15:48\', \'2023-05-05 13:15:48\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:15:51 --> mysqli_sql_exception: Column 'c_name' cannot be null in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\New Xampp\htdocs\ci_crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\New Xampp\htdocs\ci_crud\app\Controllers\CatController.php(20): CodeIgniter\BaseModel->save(Array)
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\CatController->create()
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+#11 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-05 13:15:51 --> Column 'c_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:15:51\', \'2023-05-05 13:15:51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:15:51\', \'2023-05-05 13:15:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (NULL, \'2023-05-05 13:15:51\', \'2023-05-05 13:15:51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `category` (`c_name`, `created_at`, `updated_at`) VALUES (:c_name:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\CatController.php(20): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 13:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 13:59:50 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\CatModel given
+in APPPATH\Views\index.php on line 57.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:00:57 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:03:37 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:04:39 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:10:25 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:13:44 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:13:47 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:25:05 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:29:31 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:33:25 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 14:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 14:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 14:33:33 --> Undefined variable $users
+in APPPATH\Views\index.php on line 57.
+ 1 APPPATH\Views\index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\CatController.php(15): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

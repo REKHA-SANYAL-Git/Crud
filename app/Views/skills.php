@@ -1,8 +1,6 @@
-<?php
-// echo base_url() . '</br>';
-// echo site_url();
-// exit;
-?>
+<?= $this->extend('layouts/assemble') ?>
+<?= $this->section('title') ?>Employees<?= $this->endSection() ?>
+<?= $this->section('content') ?>
 <!doctype html>
 <html lang="en">
 
@@ -18,29 +16,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Employee Manager</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+    <div class="container mt-5">
+        <h3 class="mb-3">Skills</h3>
+        <a href="<?= base_url('skills/create') ?>">
+            <button class="btn btn-sm btn-info text-light fw-bold mb-2">
+                Add Skill
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('') ?>">Users</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?= base_url('skills') ?>">Skills</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </a>
+    </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <?= $this->endSection(); ?>

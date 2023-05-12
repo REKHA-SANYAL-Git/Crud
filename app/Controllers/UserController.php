@@ -9,11 +9,67 @@ class UserController extends BaseController
 {
     public function index()
     {
+        // if ($this->request->getMethod() === 'get') {
+        //     echo '<pre>';
+        //     print_r($_SERVER);
+        //     echo '</pre>';
+        // } else {
+        //     echo '<h1>post</h1>';
+        // }
+        // if ($this->request->getMethod() === 'get') {
+        //     echo '<pre>';
+        //     print_r($this->request->getGet('q'));
+        //     echo '</pre>';
+        // } else {
+        //     echo '<h1>post</h1>';
+        // }
         $userModel = new User();
         $users = $userModel->select('id, f_name, l_name, email, salery')->findAll();
 
         return view('index', [
             "users" => $users,
+        ]);
+    }
+
+    public function search()
+    {
+        // $q = $this->request->getGet('q') ?? 45; // if its returns a null value then the value become the right side declaration
+        // ** ---------------------------- Column wise Search ---------------------------- **
+        // $userModel = new User();
+        // $col = $this->request->getGet('col');
+        // $q = $this->request->getGet('q');
+
+        // if (empty($col) || empty($q)) {
+        //     $users = $userModel->select('id, f_name, l_name, email, salery')->findAll();
+        // } else {
+        //     $users = $userModel->select('id, f_name, l_name, email, salery')->like($col, $q)->findAll();
+        // }
+
+        // return view('index', [
+        //     "users" => $users,
+        //     "col" => $col,
+        //     "q" => $q
+        // ]);
+
+        // ** ---------------------------- All Search ---------------------------- **
+        $userModel = new User();
+        $q = $this->request->getGet('q');
+        if (empty($q)) {
+            $users = $userModel->select('id, f_name, l_name, email, salery')->findAll();
+        } else {
+            $s = preg_replace('/\s+/', ' ', $q);
+            $s = explode(' ', $s);
+
+            $users = $userModel->select('id, f_name, l_name, email, salery')->like('f_name', $s[0])
+                ->orLike('l_name', count($s) >= 2 ? $s[1] : $s[0])
+                ->orLike('email', $s[0])
+                ->orLike('salery', $q[0])
+                ->findAll();
+        }
+
+        return view('index', [
+            "users" => $users,
+            "q" => $q
         ]);
     }
 
@@ -32,19 +88,48 @@ class UserController extends BaseController
                 'conf_password' => 'required|matches[password]',
             ], [
                 'f_name' => [
-                    'required' => 'Firstname is required'
+                    'required' => 'Firstname is required',
+                    'alpha' => 'Firstname should only contain alphabetic letters',
+                    'min_length' => 'Firstname must be at least 3 characters in length',
+                    'max_length' => 'Firstname cannot exceed 49 characters in length'
+                ],
+
+                'l_name' => [
+                    'required' => 'Lastname is required',
+                    'alpha' => 'Lastname should only contain alphabetic letters',
+                    'min_length' => 'Lastname must be at least 3 characters in length',
+                    'max_length' => 'Lastname cannot exceed 49 characters in length'
+                ],
+                'email' => [
+                    'required' => 'Email is required',
+                    'valid_email' => 'You should give a valid email id'
+                ],
+                'salery' => [
+                    'required' => 'Salary is required',
+                    'numeric' => 'Salary can not be alphabetic letter or any special characters'
+                ],
+                'password' => [
+                    'required' => 'Password is required',
+                    'min_length' => 'Password must be at least 8 characters in length',
+                    'max_length' => 'Password cannot exceed 255 characters in length'
+                ],
+                'conf_password' => [
+                    'required' => 'Confirm password must be given',
+                    'matches' => 'Confirm password must be same as password'
                 ]
             ])) {
                 $userModel = new User();
                 //$userModel->insert(); // It returns last inserted row id
-                $userModel->save([
+                $userData = [
                     'f_name' => $this->request->getPost('f_name'),
                     'l_name' => $this->request->getPost('l_name'),
                     'email' => $this->request->getPost('email'),
                     'salery' => $this->request->getPost('salery'),
                     'password' => $this->request->getPost('password'),
                     'conf_password' => $this->request->getPost('conf_password'),
-                ]); // It returns boolean value
+                ]; // It returns boolean value
+
+                $userModel->addUser($userData);
 
                 session()->setFlashdata('msg', 'Yeee ami ese gachi');
                 return redirect()->to('users/create');
@@ -86,22 +171,25 @@ class UserController extends BaseController
                         ]);
                     } else {
                         session()->setFlashdata('msg', 'erom makup paser barir mayta koreche');
-                        return redirect()->to('/');
+                        return redirect()->to('users');
                     }
                 } else {
-                    $userModel->update($id, [
+                    $userEdit = [
                         'f_name' => $this->request->getPost('f_name'),
                         'l_name' => $this->request->getPost('l_name'),
                         'salery' => $this->request->getPost('salery'),
-                    ]);
-                }
+                    ];
+                    $res = $userModel->editUser($id, $userEdit);
 
-                session()->setFlashdata('msg', 'Yeee amr makup complete');
-                return redirect()->to('/');
-            } else {
-                return view('edit_user', [
-                    'user' => $user
-                ]);
+                    if ($res) {
+                        session()->setFlashdata('msg', 'Yeee amr makup complete');
+                        return redirect()->to('users/');
+                    } else {
+                        return view('edit_user', [
+                            'user' => $user
+                        ]);
+                    }
+                }
             }
         }
     }
@@ -110,9 +198,12 @@ class UserController extends BaseController
     public function delete($id)
     {
         $userModel = new User();
-        $userModel->delete($id);
-
-        session()->setFlashdata('msg', 'Yee ami mar khey more gachi');
-        return redirect()->to('/');
+        $userDel = $userModel->deleteUser($id);
+        if ($userDel) {
+            session()->setFlashdata('msg', 'Yee ami mar khey more gachi');
+            return redirect()->to('users');
+        } else {
+            return redirect()->to('/');
+        }
     }
 }

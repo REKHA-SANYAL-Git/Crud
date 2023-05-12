@@ -4,24 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User extends Model
+class BrandModel extends Model
 {
-
-
     protected $DBGroup          = 'default';
-    protected $table            = 'users';
+    protected $table            = 'brands';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false; // (imp)
+    protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [
-        'f_name',
-        'l_name',
-        'email',
-        'salery',
-        'password'
-    ];
+    protected $allowedFields    = ['b_name'];
 
     // Dates
     protected $useTimestamps = true;
@@ -47,20 +39,30 @@ class User extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function addUser($data)
+    public function getBrands()
+    {
+        $this->select('id,b_name');
+        $result = $this->findAll();
+        return $result;
+    }
+
+    public function addBrands($data)
     {
         if ($this->save($data)) {
+            // echo $this->save($data);
+            //exit;
             return true;
         } else {
             return false;
         }
     }
-    public function editUser($id, $data)
+
+    public function editBrand($id, $data)
     {
         return $this->update($id, $data);
     }
 
-    public function deleteUser($id)
+    public function deleteBrand($id)
     {
         return $this->where('id', $id)->delete();
     }

@@ -1,24 +1,6 @@
 <?= $this->extend('layouts/assemble') ?>
 <?= $this->section('title') ?>Employees<?= $this->endSection() ?>
 <?= $this->section('content') ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Employee Manager</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="<?= base_url('') ?>">Users</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('skills') ?>">Skills</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <div class="container mt-5">
     <h3 class="mb-3">Users</h3>
     <a href="<?= base_url('users/create') ?>">
@@ -26,6 +8,40 @@
             Create
         </button>
     </a>
+    <form method="GET" class="d-flex" action="<?php echo base_url('users/search'); ?>">
+        <input type="text" name="q" class="form-control" value="<?= isset($q) ? ($q) : ('') ?>" placeholder="Search by user Firstname/Lastname/Email/Salery">
+        <button type="submit" class="btn btn-success text-light fw-bold">Search</button>
+    </form>
+    <!-- <div class="row">
+        <div class="col-6">
+            <?php // convert into --> <?= base_url('users/search'); 
+            ?>
+            <form method="GET" class="row" action="<?php // base_url('users/search'); 
+                                                    ?>">
+                <div class="col-3">
+                    <select name="col" class="form-control">
+                        <option value="">-- Select --</option>
+                        <option value="f_name" <?php // isset($col) && $col === 'f_name' ? 'selected' : '' 
+                                                ?>>Firstname</option>
+                        <option value="l_name" <?php // isset($col) && $col === 'l_name' ? 'selected' : '' 
+                                                ?>>Lastname</option>
+                        <option value="email" <?php // isset($col) && $col === 'email' ? 'selected' : '' 
+                                                ?>>Email</option>
+                        <option value="salery" <?php // isset($col) && $col === 'salery' ? 'selected' : '' 
+                                                ?>>Salery</option>
+                    </select>
+                </div>
+                <div class="col-7">
+                    <input type="text" name="q" value="<?php // isset($q) ? ($q) : ('') 
+                                                        ?>" class="form-control" placeholder="Search for user">
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-success text-light fw-bold">Search</button>
+                </div>
+            </form>
+        </div> 
+        <div class="col-6"></div>
+    </div> -->
     <?php if (session()->has('msg')) : ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <?= session()->getFlashdata('msg') ?>
@@ -44,27 +60,38 @@
             </tr>
         </thead>
         <tbody>
-            <?php for ($i = 0; $i < count($users); $i++) : ?>
+            <?php if (count($users) === 0) : ?>
                 <tr>
-                    <th scope="row"><?= $i + 1 ?></th>
-                    <td><?= $users[$i]['f_name'] ?></td>
-                    <td><?= $users[$i]['l_name'] ?></td>
-                    <td><?= $users[$i]['email'] ?></td>
-                    <td><?= $users[$i]['salery'] ?></td>
-                    <td>
-                        <a href="<?= base_url('users/' . $users[$i]['id'] . '/edit') ?>">
-                            <button class="btn btn-sm btn-warning text-light fw-bold mb-2">
-                                <i class="bi bi-pencil-square"></i>
-                            </button>
-                        </a>
-                        <a href="<?= base_url('users/' . $users[$i]['id'] . '/delete') ?>">
-                            <button class="btn btn-sm btn-danger text-light fw-bold mb-2">
-                                <i class="bi bi-trash"></i>
-                            </button>
-                        </a>
-                    </td>
+                    <th scope="row"># No Data Found</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-            <?php endfor; ?>
+            <?php else : ?>
+                <?php for ($i = 0; $i < count($users); $i++) : ?>
+                    <tr>
+                        <th scope="row"><?= $i + 1 ?></th>
+                        <td><?= $users[$i]['f_name'] ?></td>
+                        <td><?= $users[$i]['l_name'] ?></td>
+                        <td><?= $users[$i]['email'] ?></td>
+                        <td><?= $users[$i]['salery'] ?></td>
+                        <td>
+                            <a href="<?= base_url('users/' . $users[$i]['id'] . '/edit') ?>">
+                                <button class="btn btn-sm btn-warning text-light fw-bold mb-2">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                            </a>
+                            <a href="<?= base_url('users/' . $users[$i]['id'] . '/delete') ?>">
+                                <button class="btn btn-sm btn-danger text-light fw-bold mb-2">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endfor; ?>
+            <?php endif; ?>
         </tbody>
     </table>
 </div>

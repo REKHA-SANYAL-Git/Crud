@@ -1,0 +1,1002 @@
+INFO - 2023-05-09 05:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-09 05:36:37 --> mysqli_sql_exception: Unknown column 'b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-09 05:36:37 --> Unknown column 'b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 05:38:00 --> mysqli_sql_exception: Unknown column 'b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-09 05:38:00 --> Unknown column 'b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 05:38:03 --> mysqli_sql_exception: Unknown column 'b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-09 05:38:03 --> Unknown column 'b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 05:40:53 --> mysqli_sql_exception: Unknown column 'b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-09 05:40:53 --> Unknown column 'b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 05:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-09 05:41:02 --> mysqli_sql_exception: Unknown column 'b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-09 05:41:02 --> Unknown column 'b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 05:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 05:43:01 --> Undefined variable $brands
+in APPPATH\Controllers\BrandController.php on line 39.
+ 1 APPPATH\Controllers\BrandController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\BrandController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BrandController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BrandController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 05:45:05 --> Undefined variable $brands
+in APPPATH\Controllers\BrandController.php on line 39.
+ 1 APPPATH\Controllers\BrandController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\BrandController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BrandController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BrandController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 05:45:07 --> Undefined variable $brands
+in APPPATH\Controllers\BrandController.php on line 39.
+ 1 APPPATH\Controllers\BrandController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Controllers\\BrandController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BrandController->search()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BrandController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 05:47:58 --> mysqli_sql_exception: Unknown column 'b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-09 05:47:58 --> Unknown column 'b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `b_name`, `c_name`, `m_no`, `quantity`, `price`
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProductController.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 05:49:45 --> Undefined array key "b_name"
+in APPPATH\Views\products.php on line 47.
+ 1 APPPATH\Views\products.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "b_name"', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\products.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\ProductController.php(18): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 06:04:31 --> Undefined array key "b_name"
+in APPPATH\Views\products.php on line 47.
+ 1 APPPATH\Views\products.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "b_name"', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\products.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\ProductController.php(18): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 06:23:20 --> Too few arguments to function App\Controllers\ProductController::index(), 0 passed in C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\ProductController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 06:25:29 --> Undefined array key "b_name"
+in APPPATH\Views\products.php on line 47.
+ 1 APPPATH\Views\products.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "b_name"', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\products.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\ProductController.php(18): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 06:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 06:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 06:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 06:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 06:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 06:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 06:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 07:03:12 --> Invalid file: "edit_product.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_product.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 3 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:06:33 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:10:22 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:10:25 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:10:33 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:10:55 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:11:01 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:12:05 --> Undefined variable $Product
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Product', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:12:09 --> Undefined variable $Product
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Product', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:12:27 --> Undefined variable $product
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:12:53 --> Undefined variable $products
+in APPPATH\Views\edit_product.php on line 14.
+ 1 APPPATH\Views\edit_product.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-09 07:16:25 --> Undefined variable $Product
+in APPPATH\Views\edit_product.php on line 17.
+ 1 APPPATH\Views\edit_product.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Product', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(77): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 07:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 07:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-09 08:14:07 --> mysqli_sql_exception: Table 'employee_master.categories' doesn't exist in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 08:14:07 --> Table 'employee_master.categories' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 08:17:39 --> mysqli_sql_exception: Table 'employee_master.brand' doesn't exist in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 08:17:39 --> Table 'employee_master.brand' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brand` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 08:17:58 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 08:17:58 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 08:18:27 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 08:18:27 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 08:19:02 --> mysqli_sql_exception: Unknown column 'brand.b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 08:19:02 --> Unknown column 'brand.b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-09 08:19:40 --> mysqli_sql_exception: Unknown column 'brand.b_name' in 'field list' in C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\New Xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\New Xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\New Xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\New Xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\New Xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\New Xampp\htdocs\ci_crud\app\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+#7 C:\New Xampp\htdocs\ci_crud\app\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+#8 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(934): App\Controllers\ProductController->index()
+#9 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\New Xampp\htdocs\ci_crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\New Xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-09 08:19:40 --> Unknown column 'brand.b_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `products`.`id`, `p_name`, `brand`.`b_name`, `categories`.`c_name`, `m_no`, `quantity`, `price`
+FROM `products`
+LEFT JOIN `brands` ON `brands`.`id`=`products`.`b_id`
+LEFT JOIN `categories` ON `categories`.`id`=`products`.`c_id`
+ORDER BY `products`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProductModel.php(67): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProductController.php(16): App\Models\ProductModel->getProducts()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 08:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 08:56:03 --> Call to undefined method CodeIgniter\Session\Session::set_flashdata()
+in APPPATH\Controllers\ProductController.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 08:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 08:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 09:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:23:46 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(Object(App\Models\ProductModel), false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(Object(App\Models\ProductModel))
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(Object(App\Models\ProductModel))
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:28:36 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:29:56 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:37:11 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:38:03 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:38:10 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:41:32 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 10:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:41:38 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:42:00 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:46:20 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:47:06 --> update(): argument #1 ($id) should not be boolean.
+in SYSTEMPATH\BaseModel.php on line 903.
+ 1 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(true, null)
+ 2 APPPATH\Models\ProductModel.php(82): CodeIgniter\Model->update(true)
+ 3 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 10:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 10:47:42 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 11:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 11:09:08 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 11:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 11:09:15 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(82): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 11:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 11:10:05 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, bool returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(true, 'insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(true, false)
+ 3 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert(true, false)
+ 4 APPPATH\Models\ProductModel.php(84): CodeIgniter\BaseModel->save(true)
+ 5 APPPATH\Controllers\ProductController.php(92): App\Models\ProductModel->editProduct(true)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 11:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 11:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:00:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-09 12:05:14 --> Undefined array key "m_no"
+in APPPATH\Views\edit_product.php on line 23.
+ 1 APPPATH\Views\edit_product.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "m_no"', 'C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\New Xampp\\htdocs\\ci_crud\\app\\Views\\edit_product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_product', [], true)
+ 5 APPPATH\Controllers\ProductController.php(82): view('edit_product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->edit('15')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-09 12:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-09 12:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

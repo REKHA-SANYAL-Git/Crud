@@ -4,23 +4,23 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User extends Model
+class ProductModel extends Model
 {
-
-
     protected $DBGroup          = 'default';
-    protected $table            = 'users';
+    protected $table            = 'products';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false; // (imp)
+    protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'f_name',
-        'l_name',
-        'email',
-        'salery',
-        'password'
+        'p_name',
+        'b_id',
+        'c_id',
+        'm_no',
+        'quantity',
+        'price'
+
     ];
 
     // Dates
@@ -47,20 +47,43 @@ class User extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function addUser($data)
+    // public function get_brand_name($id)
+    // {
+    //     $db = \Config\Database::connect();
+    //     $builder = $db->table('brand');
+    //     $builder->select('b_name');
+    //     $builder->where('id', $id);
+    //     $query = $builder->get();
+    //     $result = $query->getRow();
+    //     return $result->name;
+    // }
+
+    public function getProducts()
+    {
+        $this->join('brands', 'brands.id=products.b_id', 'LEFT');
+        $this->join('categories', 'categories.id=products.c_id', 'LEFT');
+        $this->select('products.id,p_name,brands.b_name,categories.c_name,m_no,quantity,price');
+        $this->orderBy('products.id', 'desc');
+        $result = $this->findAll();
+        //echo $this->getLastQuery();
+        return $result;
+    }
+    public function addProduct($data)
     {
         if ($this->save($data)) {
+            // echo $this->save($data);
+            //exit;
+            //echo $this->getLastQuery();
             return true;
         } else {
             return false;
         }
     }
-    public function editUser($id, $data)
+    public function editProduct($id, $data)
     {
         return $this->update($id, $data);
     }
-
-    public function deleteUser($id)
+    public function deleteProduct($id)
     {
         return $this->where('id', $id)->delete();
     }

@@ -29,15 +29,51 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'UserController::index');
 $routes->get('/skills', 'SkillController::index');
+$routes->get('/list_categories', 'CatController::index');
+$routes->get('/brand', 'BrandController::index');
+$routes->get('/products', 'Productcontroller::index');
+
 // $routes->get('/skills/(:num)/edit', 'SkillController::edit/$1');
 $routes->match(['get', 'post'], '/skills/(:num)/edit', 'SkillController::edit/$1');
 // USER ROUTES 
 $routes->group('users', function ($routes) {
+    $routes->get('/', 'UserController::index');
+    $routes->get('search', 'UserController::search');
     $routes->match(['get', 'post'], 'create', 'UserController::create');
     $routes->match(['get', 'post'], '(:num)/edit', 'UserController::edit/$1');
     $routes->get('(:num)/delete', 'UserController::delete/$1');
+});
+// SKILL ROUTES
+$routes->group('skills', function ($routes) {
+    $routes->match(['get', 'post'], 'create', 'SkillController::create');
+    $routes->match(['get', 'post'], '(:num)/edit', 'SkillController::edit/$1');
+    $routes->get('(:num)/delete', 'SkillController::delete/$1');
+});
+
+//CATEGORIES ROUTES
+$routes->group('list_categories', function ($routes) {
+    $routes->get('search', 'CatController::search');
+    $routes->match(['get', 'post'], 'create', 'CatController::create');
+    $routes->match(['get', 'post'], '(:num)/edit', 'CatController::edit/$1');
+    $routes->get('(:num)/delete', 'CatController::delete/$1');
+});
+
+//BRAND ROUTES
+$routes->group('brand', function ($routes) {
+    $routes->get('search', 'BrandController::search');
+    $routes->match(['get', 'post'], 'create', 'BrandController::create');
+    $routes->match(['get', 'post'], '(:num)/edit', 'BrandController::edit/$1');
+    $routes->get('(:num)/delete', 'BrandController::delete/$1');
+});
+
+// PRODUCTS ROUTES 
+$routes->group('products', function ($routes) {
+    $routes->get('/', 'Productcontroller::index');
+    $routes->get('search', 'Productcontroller::search');
+    $routes->match(['get', 'post'], 'create', 'Productcontroller::create');
+    $routes->match(['get', 'post'], '(:num)/edit', 'Productcontroller::edit/$1');
+    $routes->get('(:num)/delete', 'Productcontroller::delete/$1');
 });
 
 

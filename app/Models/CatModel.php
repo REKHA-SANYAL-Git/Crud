@@ -4,24 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User extends Model
+class CatModel extends Model
 {
-
-
     protected $DBGroup          = 'default';
-    protected $table            = 'users';
+    protected $table            = 'categories';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false; // (imp)
+    protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [
-        'f_name',
-        'l_name',
-        'email',
-        'salery',
-        'password'
-    ];
+    protected $allowedFields    = ['c_name'];
 
     // Dates
     protected $useTimestamps = true;
@@ -47,7 +39,8 @@ class User extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function addUser($data)
+
+    public function addCat($data)
     {
         if ($this->save($data)) {
             return true;
@@ -55,12 +48,12 @@ class User extends Model
             return false;
         }
     }
-    public function editUser($id, $data)
+
+    public function editCat($id, $data)
     {
         return $this->update($id, $data);
     }
-
-    public function deleteUser($id)
+    public function deleteCat($id)
     {
         return $this->where('id', $id)->delete();
     }
